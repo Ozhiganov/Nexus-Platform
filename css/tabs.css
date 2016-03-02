@@ -1,0 +1,47 @@
+.tab-input {
+	height: 2.5em;
+	visibility: hidden;
+}
+
+.tab-label {
+	background: #f9f9f9;
+	border-radius: 5px 5px 0 0;
+	color: #888;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	height: 2.5em;
+	line-height: 2.5em;
+	padding: 0 1.5em;
+	text-align: center;
+}
+
+.tab-input:hover + .tab-label {
+	background: steelblue;
+	color: white;
+}
+
+.tab-input:checked + .tab-label {
+	background: steelblue;
+	color: white;
+	position: relative;
+	z-index: 6;
+}
+
+.tab-container-frame {
+	opacity: 0;
+	position: absolute;
+	z-index: -100;
+	background: #f9f9f9;
+}
+
+#tab-1:checked ~ #frame-1,
+#tab-2:checked ~ #frame-2,
+#tab-3:checked ~ #frame-3 {
+    opacity: 1;
+    z-index: 100;
+}
+
+.tab-input.visible {
+  visibility: visible !important;
+}

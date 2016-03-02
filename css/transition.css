@@ -1,0 +1,23 @@
+
+/** Classes to allow fading transitions between item changes in the same dynamic space. **/
+.fade-transition
+{ 
+ -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+ }
+ 
+.fade-hidden { opacity: 0; }
+.fade-visible   { opacity: 1; }
+ 
+ 
+ /** Class to allow the resizing of an item to be animated with CSS3. **/
+ .resize-transition
+ {
+   -webkit-transition: height 0.3s, width 0.3s;
+  -moz-transition: height 0.3s, width 0.3s;
+  -ms-transition: height 0.3s, width 0.3s;
+  -o-transition: height 0.3s, width 0.3s;
+  transition: height 0.3s, width 0.3s;
+ }
